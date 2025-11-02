@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home - Athul{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="about-hero">
+    <h1>About Me</h1>
+    <p>Building the future, one line of code at a time</p>
+</section>
+
+<div class="about-container">
+    <div class="about-card">
+        <div class="about-intro">
+            <div class="intro-text">
+                <h2>Hello, I'm Athulmon GP</h2>
+                <p>I'm a passionate Software Engineer specializing in Python and REST API development. With a keen eye for detail and a love for clean, scalable code, I transform complex problems into elegant solutions.</p>
+                <p>My journey in software development has been driven by curiosity and a constant desire to learn. I believe in building systems that not only work flawlessly but also provide seamless experiences for users.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+            </div>
+            <div class="quick-facts">
+                <h3>Quick Facts</h3>
+                <div class="fact-item">
+                    <span class="fact-label">Location</span>
+                    <span class="fact-value">Kerala, India</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Specialization</span>
+                    <span class="fact-value">Backend Development</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Primary Stack</span>
+                    <span class="fact-value">Python, REST API</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Availability</span>
+                    <span class="fact-value">Open to Projects</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Languages</span>
+                    <span class="fact-value">English, Malayalam</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <h2>What I Bring to the Table</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Expert in Python programming with strong foundations in data structures, algorithms, and clean code principles for building efficient applications.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎯</div>
+                <h3>Django</h3>
+                <p>Proficient in Django framework for rapid development of secure and maintainable web applications with ORM, authentication, and admin interfaces.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔌</div>
+                <h3>REST API</h3>
+                <p>Crafting well-documented, efficient RESTful APIs that follow best practices and industry standards for seamless integrations and scalability.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🐳</div>
+                <h3>Docker</h3>
+                <p>Containerizing applications with Docker for consistent environments, easy deployment, and efficient resource utilization across platforms.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <h3>Database</h3>
+                <p>Designing optimized database structures with PostgreSQL, MySQL, and MongoDB for high-performance data operations and integrity.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <h3>SQL</h3>
+                <p>Writing complex queries, stored procedures, and optimizing database performance with indexing, joins, and transaction management.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>Optimization</h3>
+                <p>Identifying bottlenecks and implementing caching, query optimization, and code refactoring to enhance application speed and efficiency.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔒</div>
+                <h3>Security Best Practices</h3>
+                <p>Implementing authentication, authorization, encryption, and security measures to protect applications and user data from vulnerabilities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="journey-section">
+        <h2>My Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Started Software Engineering</h3>
+                <span class="date">2019</span>
+                <p>Began my journey into the world of programming, discovering my passion for backend development and system design.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>First Professional Role</h3>
+                <span class="date">2020</span>
+                <p>Joined my first tech company as a Junior Developer, working on real-world projects and learning from experienced engineers.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Python & API Specialization</h3>
+                <span class="date">2021</span>
+                <p>Focused on mastering Python and REST API development, building scalable backend systems for various clients.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Senior Developer & Consultant</h3>
+                <span class="date">2023</span>
+                <p>Advanced to senior positions, leading projects and mentoring junior developers while taking on consulting roles.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Present Day</h3>
+                <span class="date">2025</span>
+                <p>Continuing to build innovative solutions, contributing to open-source, and helping businesses achieve their digital goals.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="cta-section">
+    <h2>Let's Build Something Amazing</h2>
+    <p>Have a project in mind? I'd love to hear about it and discuss how we can work together.</p>
+    <div class="cta-buttons">
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+        <a href="/portfolio" class="btn-secondary">View My Work</a>
+    </div>
+</section>
+
+{% endblock %}

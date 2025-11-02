@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home - Athul{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/resume.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="download-btn no-print">
+    <button onclick="window.print()">📥 Download as PDF</button>
+</div>
+
+<div class="resume-container">
+    <div class="resume-header">
+        <h1>Athulmon GP</h1>
+        <div class="contact-info">
+            <div class="contact-item">✉ athulmon1928@gmail.com</div>
+            <div class="contact-item">📱 9061923882</div>
+            <div class="contact-item">📍 Ernakulam, Kerala, India</div>
+            <div class="contact-item">🔗 linkedin.com/in/Athulmon-Gp</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Senior Software Engineer & Python Django Developer</div>
+                    <div class="company">Finnest Technologies Pvt Ltd</div>
+                    <div class="job-meta">February 2024 - Present (1 year 9 months) | Kochi, Kerala, India - On-site</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Leading full-stack development projects using Django and modern web technologies</li>
+                        <li>Architecting scalable solutions and mentoring junior developers</li>
+                        <li>Implementing best practices in software development and code review processes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Web Developer</div>
+                    <div class="company">ALTOS Technologies</div>
+                    <div class="job-meta">March 2023 - February 2024 (1 year) | Infopark, Kochi, Kerala, India - On-site</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Developed and maintained web applications using Django, SQL and related technologies</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
+                        <li>Worked on database optimization and performance improvements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Python Developer (Internship)</div>
+                    <div class="company">LCC Marine Drive</div>
+                    <div class="job-meta">June 2022 - March 2023 (10 months) | Kochi, Kerala, India</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Gained hands-on experience in Python development and Django framework</li>
+                        <li>Worked on data science projects and learned industry best practices</li>
+                        <li>Contributed to various development projects under senior developer guidance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Django Rest API</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Database Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <div class="education-title">Python Full Stack Development</div>
+                <div class="education-school">LCC Marine Drive, Kochi</div>
+                <div class="education-date">June 2022 - Present</div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-title">Bachelor of Computer Applications (BCA)</div>
+                <div class="education-school">Sanjo College Mullakanam, Idukki</div>
+                <div class="education-date">June 2019 - June 2022</div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-title">Higher Secondary (12th) - Computer Science</div>
+                <div class="education-school">SNVHSS NR City, Idukki</div>
+                <div class="education-date">June 2017 - March 2019</div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-title">Secondary School (SSLC)</div>
+                <div class="education-school">Mar Basil High Secondary School, Senapathy, Idukki</div>
+                <div class="education-date">June 2016 - March 2017</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Certifications</h2>
+            
+            <div class="cert-item">
+                <div class="cert-title">Python Development Internship Certificate</div>
+                <div class="cert-org">LCC Marine Drive, Kochi</div>
+                <div class="cert-date">January 2022 - February 2022</div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-title">Relieving Letter</div>
+                <div class="cert-org">ALTOS Technologies</div>
+                <div class="cert-date">March 2023 - February 2024</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Interests</h2>
+            <div class="interests">
+                <span class="interest-tag">Gaming</span>
+                <span class="interest-tag">Coding</span>
+                <span class="interest-tag">Technology Research</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
