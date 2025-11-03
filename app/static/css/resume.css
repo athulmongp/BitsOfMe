@@ -1,5 +1,5 @@
 
-@media print {
+/* @media print {
     body { margin: 0; }
     .no-print { display: none; }
     .bg-gradient, .bg-particles { display: none; }
@@ -19,7 +19,7 @@ body {
 }
 
 /* Animated Background */
-.bg-gradient {
+/* .bg-gradient {
     position: fixed;
     top: 0;
     left: 0;
@@ -45,8 +45,8 @@ body {
     background: rgba(139, 92, 246, 0.5);
     border-radius: 50%;
     animation: float 20s infinite;
-}
-
+} */
+/* 
 @keyframes float {
     0%, 100% { transform: translateY(0) translateX(0); }
     25% { transform: translateY(-100px) translateX(50px); }
@@ -75,8 +75,8 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
+}  */
+/* 
 .download-btn button {
     background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
     color: white;
@@ -93,7 +93,7 @@ body {
 .download-btn button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
-}
+} */
 
 .resume-container {
     max-width: 900px;

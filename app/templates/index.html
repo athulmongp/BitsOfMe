@@ -6,87 +6,66 @@
 
 {% block content %}
 
-<!-- <section class="hero">
-    <div class="hero-content">
-        <h1>Hi, I'm ATHULMON GP!</h1>
-        <h2>SOFTWARE <span class="highlight">ENGINEER</span></h2>
-        <p>
-            I'm a Software Engineer specializing in Python and REST API development.
-            I love building clean, scalable backend systems that power seamless digital experiences.
-            Technology is my tool to turn ideas into reliable, high-performance applications.
+    
 
-        </p>
-        <div class="cta-buttons">
-            <button class="btn-primary">PROJECTS (4)</button>
-            <button class="btn-secondary">Let's Talk 👋</button>
-        </div>
-        <div class="social-links">
-            <a href="#" class="social-icon">f</a>
-            <a href="#" class="social-icon">in</a>
-            <a href="#" class="social-icon">@</a>
-            <a href="#" class="social-icon">in</a>
-        </div>
-    </div>
+    <div class="bg-gradient"></div>
+    <div class="bg-particles" id="particles"></div>
 
-    <div class="hero-image">
-        <img src="{% static 'images/baseimage.png' %}" alt="Athul - Software Engineer">
-    </div>
-</section> -->
-
-
-
-<section class="hero">
-    <div class="hero-content">
-        <div class="greeting">👋 Hi, I'm ATHULMON GP!</div>
-        <h1>
-            SOFTWARE<br>
-            <span class="highlight">ENGINEER</span>
-        </h1>
-        <p>
-            I'm a Software Engineer specializing in Python and REST API development.
-            I love building clean, scalable backend systems that power seamless digital experiences.
-            Technology is my tool to turn ideas into reliable, high-performance applications.
-        </p>
-        <div class="cta-buttons">
-            <button class="btn-primary">VIEW PROJECTS (4)</button>
-            <button class="btn-secondary">Let's Talk 👋</button>
-        </div>
-        <div class="social-links">
-            <a href="#" class="social-icon">f</a>
-            <a href="#" class="social-icon">in</a>
-            <a href="#" class="social-icon">@</a>
-            <a href="#" class="social-icon">gh</a>
-        </div>
-    </div>
-
-    <div class="hero-image">
-        <div class="image-container">
-            <div class="glow-circle"></div>
-            <div class="profile-image">
-                <img src="{% static 'images/bg.png' %}" alt="Athul">
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="greeting">👋 Hi, I'm ATHULMON GP!</div>
+            <h1>
+                SOFTWARE<br>
+                <span class="highlight">ENGINEER</span>
+            </h1>
+            <p>
+                I'm a Software Engineer specializing in Python and REST API development.
+                I love building clean, scalable backend systems that power seamless digital experiences.
+                Technology is my tool to turn ideas into reliable, high-performance applications.
+            </p>
+            <div class="cta-buttons">
+                <button class="btn-primary">VIEW PROJECTS (4)</button>
+                <button class="btn-secondary">Let's Talk 👋</button>
             </div>
-            <div class="floating-elements">
-                <div class="float-item">🐍 Python</div>
-                <div class="float-item">⚡ REST API</div>
-                <div class="float-item">🚀 Django</div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" target="_blank" class="social-icon">f</a>
+                <a href="https://www.linkedin.com/" target="_blank" class="social-icon">in</a>
+                <a href="mailto:email@example.com" class="social-icon">@</a>
+                <a href="https://github.com/" target="_blank" class="social-icon">gh</a>
             </div>
         </div>
-    </div>
+
+        <div class="hero-image">
+            <div class="image-container">
+                <div class="glow-circle"></div>
+                <div class="profile-image">
+                    <img src="{% static 'images/bgimage.png' %}" alt="Athul">
+                </div>
+                <div class="floating-elements">
+                    <div class="float-item">🐍 Python</div>
+                    <div class="float-item">⚡ REST API</div>
+                    <div class="float-item">🚀 Django</div>
+                    <div class="float-item">🐳 Docker</div>
+                    <div class="float-item">🗄️ Database</div>
+                    <div class="float-item">🗄️ SQL</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="stats">
-    <div class="stat-card">
-        <div class="stat-number">4+</div>
-        <div class="stat-label">Years Experience</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-number">50+</div>
-        <div class="stat-label">Projects Completed</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-number">30+</div>
-        <div class="stat-label">Happy Clients</div>
-    </div>
+        <div class="stat-card">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Happy Clients</div>
+        </div>
     </section>
 
 {% endblock %}

@@ -17,17 +17,27 @@
 
     <div class="container">
         <header>
-            <div class="logo">ATHUL</div>
+            <div class="logo">ATHULMON GP</div>
+
             <nav>
-                <ul>
+                <ul id="mobile-menu-links">
                     <li><a href="{% url 'home' %}">Home</a></li>
                     <li><a href="{% url 'about' %}">About</a></li>
                     <li><a href="{% url 'resume' %}">Resume</a></li>
                     <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
+                <button class="hire-btn">Let's Talk</button>
             </nav>
-            <button class="hire-btn">Let's Talk</button>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            
         </header>
 
         {% block content %}
@@ -36,7 +46,19 @@
 
     </div>
 
-    <div class="chat-btn">💬</div>
+   <div class="mobile-menu" id="mobileMenu">
+    <ul>
+       <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'resume' %}">Resume</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+    <button class="hire-btn">Hire Me</button>
+</div>
+<div class="overlay" id="overlay"></div>
+<div class="chat-btn">💬</div>
+
 
     {% block scripts %}
         <script src="{% static 'js/index.js' %}"></script>

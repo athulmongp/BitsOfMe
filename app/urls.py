@@ -7,6 +7,8 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('resume/', views.resume, name='resume'),
+    path('contact/', views.contact_page, name='contact'),
+    path('submit_contact/', views.submit_contact, name='submit_contact'),
 ]
 
 if settings.DEBUG:
