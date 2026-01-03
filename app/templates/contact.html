@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Contact - Athul{% endblock %}
+{% block title %}Contact - Athulmon GP{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
 
 {% block content %}
 
-    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
-
     <div class="contact-hero">
-        <h1>Let's **Connect**</h1>
+        <h1>Let's <span class="highlight">Connect</span></h1>
         <p>I'm always open to new opportunities, collaborations, and interesting conversations. Send a message, and I'll get back to you as soon as possible!</p>
     </div>
 
@@ -24,26 +26,27 @@
                     
                     <div class="form-group">
                         <label for="id_name">Your Name</label>
-                        <input type="text" id="id_name" name="name" placeholder="John Doe" required>
+                        <input type="text" id="id_name" name="name" placeholder="Enter your full name" required>
                     </div>
 
                     <div class="form-group">
                         <label for="id_email">Your Email</label>
-                        <input type="email" id="id_email" name="email" placeholder="you@example.com" required>
+                        <input type="email" id="id_email" name="email" placeholder="yourname@email.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="id_subject">Subject</label>
-                        <input type="text" id="id_subject" name="subject" placeholder="Project Inquiry / Job Offer / Hello" required>
+                        <input type="text" id="id_subject" name="subject" placeholder="What would you like to discuss?" required>
                     </div>
 
                     <div class="form-group">
                         <label for="id_message">Message</label>
-                        <textarea id="id_message" name="message" rows="6" placeholder="Tell me about your project or idea..." required></textarea>
+                        <textarea id="id_message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
                     </div>
 
                     <button type="submit" class="btn-submit">
-                        Send Message 🚀
+                        <span>Send Message</span>
+                        <span class="btn-icon">🚀</span>
                     </button>
                     
                     {% if form.errors %}
@@ -54,14 +57,14 @@
             </div>
             
             <div class="contact-info-side">
-                <h2>Direct Contact Info</h2>
+                <h2>Get In Touch</h2>
                 <p>Prefer a more direct approach? Feel free to reach out via these channels.</p>
                 
                 <div class="info-item">
                     <span class="info-icon">📧</span>
                     <div class="info-details">
                         <div class="info-label">Email Address</div>
-                        <a href="mailto:athulmongp@example.com">athulmongp@example.com</a>
+                        <a href="mailto:athulmongp@gmail.com">athulmongp@gmail.com</a>
                     </div>
                 </div>
 
@@ -69,7 +72,7 @@
                     <span class="info-icon">📞</span>
                     <div class="info-details">
                         <div class="info-label">Phone</div>
-                        <a href="tel:+911234567890">+91 123 456 7890</a>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
                     </div>
                 </div>
                 
@@ -81,13 +84,38 @@
                     </div>
                 </div>
 
+                <div class="info-item">
+                    <span class="info-icon">💼</span>
+                    <div class="info-details">
+                        <div class="info-label">Current Position</div>
+                        <p>Senior Software Engineer at Finnest Technologies</p>
+                    </div>
+                </div>
+
                 <div class="social-links-vertical">
-                    <a href="https://www.linkedin.com/" target="_blank" class="social-icon-lg">
-                        <i class="fab fa-linkedin"></i> LinkedIn
+                    <h3>Connect on Social Media</h3>
+                    <a href="https://www.linkedin.com/in/athulmon-gp" target="_blank" rel="noopener noreferrer" class="social-icon-lg linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/" target="_blank" class="social-icon-lg">
-                        <i class="fab fa-github"></i> GitHub
+                    <a href="https://github.com/athulmongp" target="_blank" rel="noopener noreferrer" class="social-icon-lg github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
                     </a>
+                    <a href="https://twitter.com/athulmongp" target="_blank" rel="noopener noreferrer" class="social-icon-lg twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="availability-notice">
+            <div class="availability-content">
+                <span class="availability-status">🟢</span>
+                <div>
+                    <h3>Currently Available</h3>
+                    <p>Open to freelance projects and full-time opportunities</p>
                 </div>
             </div>
         </div>

@@ -50,7 +50,7 @@ img {
 }
 
 .about-hero p {
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 3vw, 1.4rem);
     opacity: 0.95;
     animation: fadeInUp 0.8s ease 0.2s backwards;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -110,7 +110,7 @@ img {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 1.5rem;
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     font-weight: 800;
     letter-spacing: -1px;
 }
@@ -118,13 +118,13 @@ img {
 .intro-text p {
     color: #4a4a6a;
     margin-bottom: 1.5rem;
-    font-size: 1.05rem;
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
     line-height: 1.8;
 }
 
 .quick-facts {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 25px;
     border: 2px solid rgba(102, 126, 234, 0.2);
     position: relative;
@@ -152,7 +152,7 @@ img {
 .quick-facts h3 {
     margin-bottom: 2rem;
     color: #1a1a2e;
-    font-size: 1.4rem;
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
     font-weight: 700;
 }
 
@@ -162,6 +162,8 @@ img {
     padding: 1rem 0;
     border-bottom: 2px solid rgba(102, 126, 234, 0.1);
     transition: all 0.3s ease;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .fact-item:hover {
@@ -177,7 +179,7 @@ img {
 .fact-label {
     color: #666;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -185,6 +187,7 @@ img {
 .fact-value {
     color: #7c3aed;
     font-weight: 700;
+    font-size: clamp(0.85rem, 2vw, 1rem);
 }
 
 /*
@@ -200,7 +203,7 @@ img {
     color: #1a1a2e; /* Changed from white to dark text for contrast against white background */
     margin-bottom: 3rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     font-weight: 800;
     letter-spacing: -1px;
 }
@@ -208,14 +211,14 @@ img {
 .skills-grid {
     display: grid;
     /* This creates a fully fluid grid that adjusts column count based on available space */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: 2rem;
 }
 
 .skill-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -246,15 +249,15 @@ img {
 }
 
 .skill-icon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
     transition: transform 0.3s;
     position: relative;
@@ -268,7 +271,7 @@ img {
 .skill-card h3 {
     color: #1a1a2e;
     margin-bottom: 1rem;
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
     font-weight: 700;
     position: relative;
     z-index: 1;
@@ -276,7 +279,7 @@ img {
 
 .skill-card p {
     color: #4a4a6a;
-    font-size: 0.95rem;
+    font-size: clamp(0.9rem, 2vw, 0.95rem);
     line-height: 1.7;
     position: relative;
     z-index: 1;
@@ -291,7 +294,7 @@ img {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    padding: 3rem; /* Mobile-friendly padding */
+    padding: 2rem; /* Mobile-friendly padding */
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     margin-top: 3rem;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -301,14 +304,40 @@ img {
     color: #1a1a2e;
     margin-bottom: 3rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     font-weight: 800;
     letter-spacing: -1px;
 }
 
+/* Timeline Header Styling */
+.timeline-header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-header:first-child {
+    margin-top: 0;
+}
+
+.timeline-header h3 {
+    color: #1a1a2e !important;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #667eea 0%, #764ba2 100%) 1;
+    display: inline-block;
+    margin-bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .timeline {
     position: relative;
-    padding-left: 2.5rem; /* Reduced padding for mobile */
+    padding-left: 2rem; /* Reduced padding for mobile */
 }
 
 .timeline::before {
@@ -324,7 +353,7 @@ img {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     padding: 1.5rem;
     background: rgba(102, 126, 234, 0.05);
     border-radius: 15px;
@@ -339,14 +368,14 @@ img {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -2.8rem; /* Adjusted position to align with new padding */
+    left: -2.3rem; /* Adjusted position to align with new padding */
     top: 1.5rem;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.3);
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
     transition: all 0.3s ease;
 }
 
@@ -358,8 +387,9 @@ img {
 .timeline-item h3 {
     color: #1a1a2e;
     margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
     font-weight: 700;
+    line-height: 1.4;
 }
 
 .timeline-item .date {
@@ -370,12 +400,13 @@ img {
     padding: 0.3rem 1rem;
     background: rgba(124, 58, 237, 0.1);
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
 
 .timeline-item p {
     color: #4a4a6a;
     line-height: 1.7;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 /*
@@ -388,7 +419,7 @@ img {
     background-size: 200% 200%;
     animation: gradientShift 8s ease infinite;
     color: white;
-    padding: 4rem 5%; /* Mobile-friendly padding */
+    padding: 3rem 5%; /* Mobile-friendly padding */
     text-align: center;
     margin-top: 4rem;
     position: relative;
@@ -408,7 +439,7 @@ img {
 .cta-section h2 {
     margin-bottom: 1rem;
     /* Fluid Typography: Scales between 2rem and 3rem */
-    font-size: clamp(2rem, 6vw, 3rem); 
+    font-size: clamp(1.8rem, 5vw, 3rem); 
     font-weight: 800;
     letter-spacing: -1px;
     position: relative;
@@ -418,7 +449,7 @@ img {
 .cta-section p {
     margin-bottom: 2.5rem;
     opacity: 0.95;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 3vw, 1.2rem);
     position: relative;
     z-index: 1;
 }
@@ -436,19 +467,20 @@ img {
 }
 
 .btn-primary, .btn-secondary {
-    padding: 1.2rem 3rem;
+    padding: 1rem 2.5rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: inline-block;
-    font-size: 1.05rem;
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
     letter-spacing: 0.5px;
     position: relative;
     overflow: hidden;
     /* Ensure buttons take full available width on mobile up to a max size */
     width: 90%; 
-    max-width: 300px; 
+    max-width: 300px;
+    text-align: center;
 }
 
 .btn-primary {
@@ -499,11 +531,34 @@ img {
 |--------------------------------------------------------------------------
 */
 
+/* Small Tablet (600px and Up) */
+@media (min-width: 600px) {
+    .timeline {
+        padding-left: 3rem;
+    }
+
+    .timeline-item::before {
+        left: -3.3rem;
+        width: 18px;
+        height: 18px;
+    }
+
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+}
+
 /* Tablet and Desktop Layout (768px and Up) */
 @media (min-width: 768px) {
     
     .about-card {
         padding: 3.5rem; /* Restore desktop padding */
+    }
+
+    .journey-section {
+        padding: 3rem;
     }
 
     /* Side-by-Side Layout for Intro Section */
@@ -518,7 +573,8 @@ img {
     }
 
     .quick-facts {
-        flex: 0.8; 
+        flex: 0.8;
+        padding: 2.5rem;
     }
     
     /* Restore timeline spacing for desktop */
@@ -528,6 +584,10 @@ img {
 
     .timeline-item::before {
         left: -4.2rem;
+        width: 20px;
+        height: 20px;
+        border: 4px solid white;
+        box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.3);
     }
 
     .timeline-item:hover {
@@ -542,6 +602,11 @@ img {
     .btn-primary, .btn-secondary {
         width: auto;
         max-width: none;
+        padding: 1.2rem 3rem;
+    }
+
+    .cta-section {
+        padding: 4rem 5%;
     }
 }
 

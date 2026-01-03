@@ -28,7 +28,8 @@ body {
     letter-spacing: -1px;
 }
 
-.contact-hero h1 strong {
+.contact-hero h1 strong,
+.contact-hero h1 .highlight {
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
@@ -144,7 +145,7 @@ body {
 
 /*
 |--------------------------------------------------------------------------
-| CONTACT INFO SIDE
+| CONTACT INFO SIDE - FIXED VISIBILITY
 |--------------------------------------------------------------------------
 */
 .contact-info-side {
@@ -153,9 +154,14 @@ body {
     border-radius: 25px;
 }
 
-.contact-info-side p {
-    color: #4a4a6a;
+.contact-info-side h2 {
+    color: #000000 !important;
+}
+
+.contact-info-side > p {
+    color: #333333 !important;
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .info-item {
@@ -177,24 +183,29 @@ body {
     color: #7c3aed;
 }
 
+/* CRITICAL FIX: Make all contact info text BLACK */
 .info-details a,
 .info-details p {
     text-decoration: none;
-    color: #1a1a2e;
-    font-weight: 600;
-    font-size: 1.1rem;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    font-size: 1.1rem !important;
     transition: color 0.3s;
+    margin: 0;
 }
 
 .info-details a:hover {
-    color: #667eea;
+    color: #667eea !important;
 }
 
 .info-label {
-    font-size: 0.9rem;
-    color: #666;
-    font-weight: 400;
-    margin-bottom: 0.2rem;
+    font-size: 0.85rem !important;
+    color: #666666 !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.3rem;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .social-links-vertical {
@@ -204,6 +215,12 @@ body {
     margin-top: 2rem;
 }
 
+.social-links-vertical h3 {
+    color: #000000 !important;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 .social-icon-lg {
     display: flex;
     align-items: center;
@@ -211,31 +228,75 @@ body {
     padding: 1rem 1.5rem;
     border-radius: 15px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700 !important;
     font-size: 1rem;
     transition: all 0.3s ease;
 }
 
-.social-icon-lg:nth-child(1) { /* LinkedIn */
+.social-icon-lg span {
+    color: inherit !important;
+}
+
+.social-icon-lg.linkedin { 
     background-color: #0a66c21a;
-    color: #0a66c2;
+    color: #0a66c2 !important;
     border: 1px solid #0a66c21a;
 }
-.social-icon-lg:nth-child(1):hover {
+.social-icon-lg.linkedin:hover {
     background-color: #0a66c2;
-    color: white;
+    color: white !important;
 }
 
-.social-icon-lg:nth-child(2) { /* GitHub */
+.social-icon-lg.github { 
     background-color: #3333331a;
-    color: #333333;
+    color: #333333 !important;
     border: 1px solid #3333331a;
 }
-.social-icon-lg:nth-child(2):hover {
+.social-icon-lg.github:hover {
     background-color: #333333;
-    color: white;
+    color: white !important;
 }
 
+.social-icon-lg.twitter { 
+    background-color: #1da1f21a;
+    color: #1da1f2 !important;
+    border: 1px solid #1da1f21a;
+}
+.social-icon-lg.twitter:hover {
+    background-color: #1da1f2;
+    color: white !important;
+}
+
+/* Availability Notice */
+.availability-notice {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 2px solid rgba(102, 126, 234, 0.2);
+    margin-top: 2rem;
+}
+
+.availability-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.availability-status {
+    font-size: 2rem;
+}
+
+.availability-content h3 {
+    color: #000000 !important;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.availability-content p {
+    color: #333333 !important;
+    margin: 0;
+    font-weight: 500;
+}
 
 /*
 |--------------------------------------------------------------------------
