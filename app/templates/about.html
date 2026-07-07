@@ -3,7 +3,7 @@
 
 {% load static %}
 
-{% block title %}Home - Athul{% endblock %}
+{% block title %}About — Athulmon GP{% endblock %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/about.css' %}">
@@ -17,7 +17,7 @@
 </section>
 
 <div class="about-container">
-    <div class="about-card">
+    <div class="about-card reveal">
         <div class="about-intro">
             <div class="intro-text">
                 <h2>Hello, I'm Athulmon GP</h2>
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class="skills-section">
+    <div class="skills-section reveal">
         <h2>What I Bring to the Table</h2>
         <div class="skills-grid">
             <div class="skill-card">
@@ -97,7 +97,7 @@
         </div>
     </div>
 
-    <div class="journey-section">
+    <div class="journey-section reveal">
         <h2>My Journey</h2>
         
         <div class="timeline-header">
@@ -149,12 +149,12 @@
     </div>
 </div>
 
-<section class="cta-section">
+<section class="cta-section reveal">
     <h2>Let's Build Something Amazing</h2>
     <p>Have a project in mind? I'd love to hear about it and discuss how we can work together.</p>
     <div class="cta-buttons">
-        <a href="#contact" class="btn-primary">Get In Touch</a>
-        <a href="/portfolio" class="btn-secondary">View My Work</a>
+        <a href="{% url 'contact' %}" class="btn-primary">Get In Touch</a>
+        <a href="{% url 'resume' %}" class="btn-secondary">View My Resume</a>
     </div>
 </section>
 

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Contact - Athulmon GP{% endblock %}
+{% block title %}Contact — Athulmon GP{% endblock %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/contact.css' %}">
@@ -9,14 +9,14 @@
 
 {% block content %}
 
-    <div class="contact-hero">
+    <section class="contact-hero">
         <h1>Let's <span class="highlight">Connect</span></h1>
         <p>I'm always open to new opportunities, collaborations, and interesting conversations. Send a message, and I'll get back to you as soon as possible!</p>
-    </div>
+    </section>
 
     <div class="contact-container">
         
-        <div class="contact-card">
+        <div class="contact-card reveal">
             
             <div class="contact-form-side">
                 <h2>Send a Message</h2>
@@ -46,7 +46,7 @@
 
                     <button type="submit" class="btn-submit">
                         <span>Send Message</span>
-                        <span class="btn-icon">🚀</span>
+                        <span class="btn-icon">→</span>
                     </button>
                     
                     {% if form.errors %}
@@ -72,7 +72,7 @@
                     <span class="info-icon">📞</span>
                     <div class="info-details">
                         <div class="info-label">Phone</div>
-                        <a href="tel:+919876543210">+91 98765 43210</a>
+                        <a href="tel:+919061923882">+91 9061923882</a>
                     </div>
                 </div>
                 
@@ -94,23 +94,17 @@
 
                 <div class="social-links-vertical">
                     <h3>Connect on Social Media</h3>
-                    <a href="https://www.linkedin.com/in/athulmon-gp" target="_blank" rel="noopener noreferrer" class="social-icon-lg linkedin">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/athulmon-gp-83875a267" target="_blank" rel="noopener noreferrer" class="social-icon-lg linkedin">
                         <span>LinkedIn</span>
                     </a>
                     <a href="https://github.com/athulmongp" target="_blank" rel="noopener noreferrer" class="social-icon-lg github">
-                        <i class="fab fa-github"></i>
                         <span>GitHub</span>
-                    </a>
-                    <a href="https://twitter.com/athulmongp" target="_blank" rel="noopener noreferrer" class="social-icon-lg twitter">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
                     </a>
                 </div>
             </div>
         </div>
         
-        <div class="availability-notice">
+        <div class="availability-notice reveal">
             <div class="availability-content">
                 <span class="availability-status">🟢</span>
                 <div>
